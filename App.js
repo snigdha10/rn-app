@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import ToDo from "./src/todo/ToDo";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import ToDo from "./src/pages/todo/ToDo";
 
 export default function App() {
 

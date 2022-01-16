@@ -1,21 +1,22 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    inputContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginTop: 20,
-        alignItems: 'center',
-        paddingBottom: 20
+    container: {
+        paddingVertical: 40
+    },
+    goalsHeading: {
+        marginBottom: 5,
+    },
+    goalsText: {
+        fontWeight: 'bold'
     },
     textInput: {
         borderBottomColor: 'grey',
         borderBottomWidth: 1,
-        width: '80%'
+        marginBottom: 20
     },
-    buttonStyle: {
-        width: '20%'
+    buttonViewStyle: {
+        paddingBottom: 20
     },
     goal: {
         marginVertical: 5,

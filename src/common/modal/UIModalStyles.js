@@ -4,15 +4,14 @@ export default StyleSheet.create({
     modalContainer: {
         justifyContent: 'center',
         alignItems: 'center',
-        height: 300,
-        width: 300,
-        borderColor: 'red',
-        borderWidth: 1
+        flex: 1
     },
     modalClose: {
-
+        color: 'red',
+        paddingVertical: 20
     },
     modalChildren: {
-
+        width: '80%',
+        marginBottom: 20
     }
 });

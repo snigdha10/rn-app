@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, View, Text, TouchableWithoutFeedback } from 'react-native';
+import { Modal, View, Button } from 'react-native';
 import styles from './UIModalStyles';
 
 const UIModal = (props) => {
@@ -8,10 +8,8 @@ const UIModal = (props) => {
 
     return <Modal visible={showModal} animationType='slide'>
         <View style={styles.modalContainer}>
-            <View>{children}</View>
-            <TouchableWithoutFeedback onPress={toggleModal.bind(this, false)}>
-                <Text>Cancel</Text>
-            </TouchableWithoutFeedback>
+            <View style={styles.modalChildren}>{children}</View>
+            <Button title='Cancel' color='#ffb3b3' onPress={toggleModal.bind(this, false)}/>
         </View>
     </Modal>;
 };

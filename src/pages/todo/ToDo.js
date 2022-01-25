@@ -41,13 +41,13 @@ export default function ToDo() {
     return (
         <View style={styles.container}>
             <UIModal showModal={showModal} toggleModal={toggleModal}>
-                <View style={styles.inputContainer}>
+                <View>
                     <TextInput style={styles.textInput}
                                placeholder='Enter a goal'
                                onChangeText={goalInputHandler}
                                value={enteredGoal}
                     />
-                    <Button title='+' onPress={addGoal}/>
+                    <Button title='+ Add goal' onPress={addGoal}/>
                 </View>
             </UIModal>
             <View style={styles.buttonViewStyle}>
